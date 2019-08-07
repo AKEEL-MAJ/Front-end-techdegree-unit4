@@ -1,0 +1,63 @@
+// ======================================
+//  Mixin Styles
+// ======================================
+
+// Align Center
+
+@mixin center {
+  display: block;
+  margin: 0 auto;
+}
+
+
+// Button Mixin
+
+@mixin button {
+  color: white;
+  width: 100%;
+  height: em(40px);
+  margin: em(15px);
+  padding: em(10px);
+  font-size: em(16px);
+  font-weight: 800;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+
+  @include break-m {
+    width: 18%;
+    display: inline;
+    margin: em(5px);
+    padding: em(5px);
+    font-size: em(10px); 
+  }
+}
+
+
+// Media Query Mixin
+
+@mixin break-s {
+  @media (min-width: $break-s) {
+    @content;
+  }
+}
+
+@mixin break-m {
+  @media (min-width: $break-m) {
+    @content; 
+  }
+}
+
+@mixin break-l {
+  @media (min-width: $break-l) {
+    @content;
+  }
+}
+
+
+// Flexbox Mixin
+
+@mixin flexy {
+  display: flex;
+  flex-direction: column;
+}

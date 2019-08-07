@@ -1,0 +1,36 @@
+// ======================================
+//  Typography Styles
+// ======================================
+
+// // ======================================
+// //  Typography
+// // ======================================
+
+.headline--secondary {
+  color: $text-color;
+  font-weight: 100;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.headline--primary {
+  color: $primary-color;
+  padding-left: em(16px);
+  font-family: $bold;
+}
+
+.link {
+  color: $primary-color;
+  text-decoration: none;
+  font-family: $bold;
+  @extend %link;
+}
+
+.blockquote {
+  color: $text-color;
+  padding-left: em(16px);
+  border-left: em(10px) solid $primary-color;
+  border-radius: em(5px);
+  font-size: em(24px);
+  font-family: $regular-italic;
+}

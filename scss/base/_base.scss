@@ -1,0 +1,56 @@
+// ======================================
+//  Base Styles
+// ======================================
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  color: $text-color;
+  font-size: em(16px); 
+  line-height: 1.6;
+}
+
+a {
+  font-size: em(20px);
+  font-family: $medium;
+  text-decoration: none;
+  color: $text-color;
+}
+
+
+
+// ======================================
+//  Font Styles
+// ======================================
+
+@font-face {
+  font-family: 'Asap Regular';
+  src: url('../scss/components/fonts/Asap-Regular.eot');
+  src: url('../scss/components/fonts/Asap-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Asap Regular Italic';
+  src: url('../scss/components/fonts/Asap-RegularItalic.eot');
+  src: url('../scss/components/fonts/Asap-RegularItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Asap Medium';
+  src: url('../scss/components/fonts/Asap-Medium.eot');
+  src: url('../scss/components/fonts/Asap-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Asap Bold';
+  src: url('../scss/components/fonts/Asap-Bold.eot');
+  src: url('../scss/components/fonts/Asap-Bold.ttf') format('truetype');
+}
+
+

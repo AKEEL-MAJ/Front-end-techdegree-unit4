@@ -1,0 +1,13 @@
+// ======================================
+//  Image Styles
+// ======================================
+
+.img--frame {
+  border: em(1px) solid grey;
+  @extend %img--frame;
+}
+
+.img--avatar {
+  @include center;
+  @extend %img--avatar;
+}

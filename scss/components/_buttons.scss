@@ -1,0 +1,60 @@
+// ======================================
+//  Button Styles
+// ======================================
+
+  .btn--default {
+    @include center;
+    @include button;
+    background-color: $fountain-blue;
+  }
+  
+  .btn--default:hover {
+    background-color: lighten($fountain-blue, 20%);
+  }
+  
+  .btn--success {
+    @include center;
+    @include button;
+    background-color: $emerald;
+  }
+  
+  .btn--success:hover {
+    background-color: lighten($emerald, 20%);
+  }
+  
+  .btn--error {
+    @include center;
+    @include button;
+    background-color: $sunglo;
+  }
+  
+  .btn--error:hover {
+    background-color: lighten($sunglo, 20%);
+  }
+  
+  .btn--warning {
+    @include center;
+    @include button;
+    background-color: $coral;
+  }
+  
+  .btn--warning:hover {
+    background-color: lighten($coral, 20%);
+  }
+  
+  .btn--info {
+    @include center;
+    @include button;
+    background-color: $purple-majesty;
+  }
+  
+  .btn--info:hover {
+    background-color: lighten($purple-majesty, 20%);
+  }
+
+
+  [class^=btn--] {
+    font-family: $medium;
+    letter-spacing: 1px;
+  }
+
