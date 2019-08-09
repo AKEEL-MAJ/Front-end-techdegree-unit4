@@ -1,0 +1,32 @@
+// ======================================
+//  Navigation Styles
+// ======================================
+
+
+.nav {
+  display: block;
+  color: $text-color;
+}
+
+.nav__item {
+  @extend %nav__item;
+
+  &:hover {
+    background-color: $primary-color;
+    border-radius: em(5px);
+    a {
+      color: #fff;
+    }  
+  }
+
+  @include break-s {
+    margin: em(10px); 
+    padding: em(10px);
+    
+  }
+  @include break-m {
+    display: inline-block;
+    justify-content: space-between;
+    font-size: em(11px);
+  }
+}
