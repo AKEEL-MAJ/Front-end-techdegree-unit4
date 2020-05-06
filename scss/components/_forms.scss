@@ -11,28 +11,35 @@
 
 .form__input {
 	display: block;
-	margin-top: em(15px);
-	margin-bottom: em(15px);
+	margin-top: em(20px);
+	margin-bottom: em(20px);
 	padding: em(20px);
+	border-bottom: em(5px) solid $primary-color;
 	width: 100%; 
 	outline: 0;
 	border: 0;
+
+	@include break-m {
+	margin-top: em(5px);
+	margin-bottom: em(15px);
+	padding: em(15px);
+	}
 }
 
 .form__label--hidden {
 	display: none;
+	border-bottom: em(5px) solid $primary-color;
 }
 
 .form__input:focus {
 	outline: none;
 	border-bottom: em(5px) solid $primary-color;
-	margin-bottom: em(15px);
 }
   
 [type^=submit] {
-	padding: em(10px, 15px);
-	margin: em(10px, 30px);
-	height: em(40px);
+	padding: em(0px, 15px);
+	margin: em(0px, 40px);
+	height: em(45px);
 	width: 100%;
 	cursor: pointer;
 }

@@ -570,16 +570,11 @@ a {
     margin: 0 auto;
   }
 }
-@media (min-width: 1400px) {
-  .container {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-  }
-}
 
 .grid__col--12.theme__colors {
   background-color: #64c1bb;
+  display: block;
+  margin: 0 auto;
 }
 
 .grid__col--6.theme__colors {
@@ -757,8 +752,20 @@ a {
 }
 
 [class^=btn--] {
+  justify-content: center;
   font-family: "Asap Medium";
   letter-spacing: 1px;
+  margin-left: 4px;
+  margin-right: 13px;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  [class^=btn--] {
+    width: 15%;
+    height: 35px;
+    padding: 10px 5px;
+    margin: 12px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -769,28 +776,36 @@ a {
 
 .form__input {
   display: block;
-  margin-top: 0.9375em;
-  margin-bottom: 0.9375em;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
   padding: 1.25em;
+  border-bottom: 0.3125em solid #52bab3;
   width: 100%;
   outline: 0;
   border: 0;
 }
+@media (min-width: 768px) {
+  .form__input {
+    margin-top: 0.3125em;
+    margin-bottom: 0.9375em;
+    padding: 0.9375em;
+  }
+}
 
 .form__label--hidden {
   display: none;
+  border-bottom: 0.3125em solid #52bab3;
 }
 
 .form__input:focus {
   outline: none;
   border-bottom: 0.3125em solid #52bab3;
-  margin-bottom: 0.9375em;
 }
 
 [type^=submit] {
-  padding: 0.6666666667em;
-  margin: 0.3333333333em;
-  height: 2.5em;
+  padding: 0em;
+  margin: 0em;
+  height: 2.8125em;
   width: 100%;
   cursor: pointer;
 }
@@ -820,6 +835,11 @@ a {
   display: block;
   color: #908686;
 }
+@media (min-width: 768px) {
+  .nav {
+    margin-left: 75px;
+  }
+}
 
 .nav__item:hover {
   background-color: #52bab3;
@@ -845,7 +865,7 @@ a {
 .headline--secondary {
   color: #908686;
   font-weight: 100;
-  margin: 10px 0;
+  margin: 10px 50px 10px 0px;
   padding: 10px 0;
 }
 

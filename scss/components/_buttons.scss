@@ -54,7 +54,17 @@
 
 
   [class^=btn--] {
+    justify-content: center;
     font-family: $medium;
     letter-spacing: 1px;
+    margin-left: 4px;
+    margin-right: 13px;
+    margin-bottom: 25px;
+    @include break-m {
+      width: 15%;
+      height: 35px;
+      padding: 10px 5px;
+      margin: 12px;
+    }
   }
 
