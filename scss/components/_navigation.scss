@@ -6,6 +6,10 @@
 .nav {
   display: block;
   color: $text-color;
+  
+  @include break-m {
+    margin-left: 75px;
+  }
 }
 
 .nav__item {
